@@ -1,0 +1,36 @@
+.imagenSM{
+    width: 360px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.imagenMD{
+    display: none;
+}
+.imagenLG{
+    display: none;
+}
+@media screen and (min-width:768px) {
+    .imagenSM{
+     display: none;
+    }
+    .imagenMD{
+        display:block;
+        width: 600px;
+        height: 270px;
+        margin-bottom: 80px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .imagenSM{
+        display: none;
+       }
+       .imagenMD{
+        display: none;
+       }
+    .imagenLG{
+        display:block;
+        width:1000px;
+        height: 300px;
+        margin-bottom: 290px;
+    }
+}

@@ -1,0 +1,25 @@
+.fondo{
+  background: linear-gradient(180deg, #71bb4c 0%, #33A247 95.7%);
+  border-radius: 0 0 100px 100px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ margin-bottom: 50px;
+}
+@media (min-width: 340px) and (max-width: 768px) {
+  .fondo{
+    padding-top:100px ;
+  }
+}
+@media screen and (min-width: 1024px) {
+  
+  .fondo{
+    padding-top:100px ;
+    padding-bottom:32px;
+    flex-direction: row;
+
+  }
+
+}
+

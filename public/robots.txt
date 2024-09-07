@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /index-two
+Disallow: /team 
+Allow: /
+Sitemap: https://creatiendaya.com/sitemap.xml
+SiteMap: https://creatiendaya.com/servicios/sitemap.xml

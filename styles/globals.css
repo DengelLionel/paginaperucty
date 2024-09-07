@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700;800&family=Righteous&display=swap');
+:root{
+--font-righteous:'Righteous', sans-serif;
+--font-montserrat: 'Montserrat', sans-serif;
+--font-poppins: 'Poppins', sans-serif;
+--font-brunoacesc:'Bruno Ace SC', sans-serif;
+}
+
+.cuadroaction{
+  position: relative;
+  z-index: 1;
+}
+.cuadroaction::before{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.25);
+  content: '';
+  top: 0;
+  z-index: -1;
+}
+.titulo-diseno{
+  @appy font-montserrat;
+}
+.titulo-diseno{
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+}
+@media (min-width: 240px) and (max-width: 768px){
+  .titulo-diseno{
+    font-size: 3em;
+  }
+  
+}
+@media (min-width: 769px) and (max-width: 1970px){
+  .titulo-diseno{
+    font-size: 3.5em;
+  }
+  
+}
+.background-radial-gradient {
+  background-color: hsl(124, 40%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(128, 41%, 35%) 15%,
+      hsl(143, 41%, 30%) 35%,
+      hsl(123, 40%, 41%) 75%,
+      hsl(132, 40%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(147, 41%, 45%) 15%,
+      hsl(130, 41%, 30%) 35%,
+      hsl(120, 41%, 20%) 75%,
+      hsl(138, 40%, 19%) 80%,
+      transparent 100%);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.scrollx{
+  @apply grid grid-cols-[repeat(5,auto)]  gap-[20px] pl-[16px] pb-[34px] w-full overflow-x-scroll xl:flex xl:flex-row xl:justify-center xl:items-center;
+}
+.scrollx::-webkit-scrollbar {
+  width: 0.2em;
+  background-color: transparent;
+}
+.scrollx::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.button{
+  @apply font-roboto font-bold text-[20px] text-center  text-azul4 pt-[10px] mt-[20px] pb-[10px] w-[300px] transition-all duration-500  rounded-tl-[10px] rounded-tr-[10px] rounded-br-[10px] rounded-bl-[10px] md:text-[24px] md:w-[400px] md:p-[10px] lg:text-[24px] lg:p-[15px];
+}
+.button{
+  background-color: #F5BB19 !important;
+}
+.button:hover{
+  background-color: #FACC4B !important;
+}
+@media (min-width: 1024px) {
+  .flex-row-rev {
+    flex-direction: row-reverse;
+  }
+}
+
+.memory-game {
+  @apply grid grid-cols-2 gap-4 md:grid-cols-4 gap-[10px] mt-8 mx-auto  w-full p-[16px];
+}
+
+.card {
+  @apply w-[150px] h-[150px] bg-gray-300 rounded cursor-pointer flex items-center justify-center text-lg;
+  background-size: cover;
+}
+
+.flipped {
+  @apply transform rotate-180;
+}
+
+.buttonuno{
+  @apply items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white  transition duration-300 ease-in-out;
+  background-color: rgb(14, 199, 112) !important;
+}
