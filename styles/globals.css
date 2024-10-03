@@ -9,6 +9,24 @@
 --font-brunoacesc:'Bruno Ace SC', sans-serif;
 }
 
+.swiper-pagination-bullet {
+  background-color: #E6E6E6 !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100% !important;
+  transition: all 0.3s ease !important;
+  opacity: 0.7 !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #00967d !important;
+  width: 50px !important;
+  height: 10px !important;
+  border-radius: 5px !important;
+  opacity: 1 !important;
+  transform: scale(1.1) !important;
+  transition: all 0.3s ease !important;
+}
 .cuadroaction{
   position: relative;
   z-index: 1;

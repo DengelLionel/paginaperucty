@@ -20,11 +20,12 @@ const Sliders = () => {
     spaceBetween={30}
     centeredSlides={true}
     autoplay={{
-      delay: 2500,
+      delay: 5500,
       disableOnInteraction: false,
     }}
     pagination={{
       clickable: true,
+      dynamicBullets: true,
     }}
     navigation={{nextEl:'.swiper-button-next', prevEl:'.swiper-button-prev',enabled:true}}
     modules={[Autoplay, Pagination, Navigation]}
@@ -46,16 +47,18 @@ const Sliders = () => {
 
 
       </div>
+      {/* DESKTOP */}
       <div className='hidden lg:flex'>
       <Swiper
     spaceBetween={30}
     centeredSlides={true}
     autoplay={{
-      delay: 2500,
+      delay: 5500,
       disableOnInteraction: false,
     }}
     pagination={{
       clickable: true,
+      dynamicBullets: true,
     }}
     navigation={{nextEl:'.swiper-button-next', prevEl:'.swiper-button-prev',enabled:true}}
     modules={[Autoplay, Pagination, Navigation]}
@@ -75,12 +78,9 @@ const Sliders = () => {
     
         </SwiperSlide>
         <SwiperSlide>
-        <Image src={'https://res.cloudinary.com/dh9etf988/image/upload/v1697247776/creatiendaya/tienda_ii_1_msx4fv.png'} width={900} height={400} alt='slide'/>
+        <Image src={'https://res.cloudinary.com/dh9etf988/image/upload/v1697247776/creatiendaya/tienda_ii_1_msx4fv.png'} width={1000} height={400} alt='Creamos tu tienda online con un diseño hermoso en Perú'/>
         </SwiperSlide>
-       
-     
-       
-     
+        
       </Swiper>
       </div>
       </>
