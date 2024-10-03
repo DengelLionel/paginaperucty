@@ -14,7 +14,7 @@ const Card = ({image,titulo,url="#"}:cards) => {
     <section className={styles.card}>
       <div  className={styles.content1}>
         <article className='relative w-full h-full'>
-        <Image className='rounded-tr-[20px] rounded-tl-[20px]'  src={image}   layout="fill"
+        <Image className='rounded-tr-[20px] rounded-tl-[20px] object-cover'  src={image}   layout="fill"
       alt={titulo}/>
         </article>
      
@@ -27,7 +27,7 @@ const Card = ({image,titulo,url="#"}:cards) => {
     <section className={styles.card1024}>
       <article className={styles.content}>
       <article className='relative w-full h-[200px]'>
-      <Image className=" rounded-tr-[20px] rounded-tl-[20px]"  src={image} priority={true} layout="fill" alt={titulo}/>
+      <Image className=" rounded-tr-[20px] rounded-tl-[20px] object-cover"  src={image} priority={true} layout="fill" alt={titulo}/>
       </article>
      
   
